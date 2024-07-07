@@ -1,0 +1,100 @@
+.calculator {
+  max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+
+  h1 {
+    font-family: "ALS Schlange sans",sans-serif;
+    color: #36464e;
+    font-weight: 1200;
+    text-align: center;
+    margin: 10px 10px 20px 10px; 
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .output {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #fff;
+    font-family: "ALS Schlange sans",sans-serif;
+    color: #36464e;
+    font-weight: 700;
+  }
+
+  .input input {
+    width: calc(100% - 0px); 
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .input input {
+    text-align: center;
+    font-size: 2em;
+    font-family: "ALS Schlange sans",sans-serif;
+    color: #36464e;
+    font-weight: 700;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+  }
+
+  .buttons button:nth-child(17),
+  .buttons button:nth-child(18) {
+    grid-column: span 2;
+  }
+  
+  .buttons button {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .buttons button.delete {
+    background-color: #ff6666;
+  }
+  
+  .buttons button.backspace {
+    background-color: #ffc46b;
+  }
+
+  .buttons button {
+    /* flex: 1 0 25%;  */
+    box-sizing: content-box;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #838383;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #cb86ff;
+    cursor: pointer;
+    font-family: "ALS Schlange sans",sans-serif;
+    color: #36464e;
+    font-weight: 500;
+  }
+
+  .buttons button:hover {
+    background-color: #d0d0d0;
+  }
+
+  .buttons .delete:hover, .buttons .backspace:hover {
+    background-color: #d0d0d0;
+  }
